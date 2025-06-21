@@ -81,7 +81,7 @@ export const authAPI = {
 }
 
 export const carAPI = {
-  getLiveCars: () => api.get("/cars"),
+  getLiveCars: () => api.get("/home"),
   getCarDetails: (carId: number) => api.get(`/booking/${carId}`),
   bookCar: (carId: number, data: { start_time: string; end_time: string }) => api.post(`/booking/${carId}`, data),
   reserveCar: (carId: number, data: { start_time: string; end_time: string }) => api.post(`/reserve/${carId}`, data),
